@@ -1,0 +1,107 @@
+/* reset dan konfigurasi dasar */
+* { /*selector untuk semua elemen di halaman*/
+    margin: 0; 
+    /*menghapus margin default agar tidak ada spasi tambahan*/
+    padding: 0; 
+    /*menghapus padding default agar tidak ada jarak tambahan*/
+    box-sizing: border-box;
+    /*memastikan w dan h mencakup padding dan border, tidak hanya kontennya*/
+    font-family: 'Markazi Text' , sans-serif; 
+    /*menetapkan font untuk seluruh halaman*/
+    background: rgba(246, 246, 246, 1);
+    /* warna latar utama */
+}
+
+/* gambar logo didalam form section */
+.logo {
+    width: 120px; 
+    /*menyesuaikan ukuran logo*/
+    position: absolute; 
+    /*menjadikan logo bebas diposisikan di dalam form-section*/
+    top: 13px; 
+    /*memberikan jarak 20 piksel dari bagian atas*/
+    left: 30px; 
+    /*memberikan jarak 20 piksel dari sisi kiri*/
+}
+
+/* judul */
+h2 {
+    text-align: center;
+    /* membuat teks menjadi di tengah */
+    margin-top: 105px;
+    /* mengatur jarak tulisan dengan atas layar */
+    font-size: 73px;
+    /* ukuran judul */
+    margin-bottom: 50px;
+    /* mengatur jarak dari judul ke pilihan */
+}
+
+/* container pilihan bidang */
+.choose-field {
+    display: flex;
+    /* menggunakan sistem flexbox */
+    flex-direction: column;
+    /* mengatur susunan elemen dari atas ke bawah */
+    align-items: center; 
+    /* item di tengah */
+    gap: 20px; 
+    /* jarak antar elemen */
+}
+
+/* baris pilihan bidang */
+.line {
+    display: flex;
+    /* membuat kategori sejajar */
+    gap: 60px; 
+    /* memberi jarak antara baris pilihan bidang */
+}
+
+/* list item pilihan bidang */
+ul {
+    list-style: none; 
+    /* menghilang bullet point bawaan dari ul */
+    padding: 0;
+    /* menghapus padding default */
+    display: flex;
+    /* mengatur isi sejajar ke samping */
+    gap: 70px;
+    /* jarak antar item dalam satu baris */
+}
+
+/* kotak pilihan bidang */
+li {
+    background: #002060;
+    /* warna kotak background */
+    color: white;
+    /* warna teks didalam */
+    padding: 15px;
+    /* jarak antara teks dan background */
+    margin: 10px;
+    /* jarak satu sama lain */
+    text-align: center;
+    /* teks ditengah secara horizontal */
+    font-size: 40px;
+    width: 250px;
+    /* menyamakan lebar semua kotak */
+    min-height: 50px;
+    /* menyamakan tinggi semua kotak */
+    cursor: pointer;
+    border: solid 2px transparent; 
+    /* border transparan mencegah perubahan */
+}
+
+/* efek perubahan warna ketika disentuh */
+li:hover {
+    background-color: rgb(220, 220, 237);
+    /* mengubah warna backgroud */
+    color: #002060;
+    /* warna tulisan didalam kotak */
+    font-weight: bold;
+    /* tipe tulisan */
+    border: 2px solid #002060;
+    /* border kotak */
+}  
+
+ul.a {
+    text-decoration: none;
+}

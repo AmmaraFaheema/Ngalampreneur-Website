@@ -1,0 +1,298 @@
+/* FONT & BACKGROUND */
+body {
+    font-family: 'Markazi Text', sans-serif; 
+    background-color: rgba(255, 255, 255, 1);
+    margin: 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Markazi Text', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    max-width: 100%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    padding-top: 3px;
+}
+
+.logo{
+    width: 100px;
+    margin-left: 3px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav ul li{
+    margin: 0 10px;
+}
+
+nav ul li a{
+    font-size: 30px;
+    font-weight: 500;
+    color: #1E56A0;
+    padding: 5px;
+}
+
+nav ul li a:hover{
+    background-color: #0B1E38; /* Mengubah warna teks menjadi hitam saat dihover */
+    color: #F6F6F6;
+    border-radius: 10px;
+    transform: translateY(-5px);
+}
+
+.right-navbar .medal{ /* untuk icon */
+    width: 80px; 
+    height: auto;
+    margin-left: 15px; 
+}
+
+.right-navbar .settings{ /* untuk icon */
+    width: 30px; 
+    height: auto;
+    margin-left: 15px; 
+}
+
+.right-navbar .personal{ /* untuk icon */
+    width: 35px; 
+    height: auto;
+    margin-left: 15px;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+h1 {
+    font-size: 24px;
+    color: #1a1a1a;
+}
+
+.challenge-card {
+    background: rgba(246, 246, 246, 1);
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    text-align: left;
+    border-left: 5px solid rgba(22, 49, 114, 1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-top: 20px;
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s ease;
+}
+.challenge-card h2 {
+    font-size: 25px;
+    color: rgba(22, 49, 114, 1);
+    margin: 0 0 5px;
+    line-height: 0.8;
+    margin-bottom: 10px;
+}
+.challenge-card p {
+    font-size: 18px;
+    color: rgba(22, 49, 114, 1);
+    margin: 0 0 10px;
+    line-height: 0.8;
+}
+
+.challenge-card:hover {
+    transform: translateY(-20px);
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.button {
+    display: inline-block;
+    background: rgba(22, 49, 114, 1);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+.due-date {
+    font-size: 12px;
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    color: rgba(22, 49, 114, 1);
+}
+
+/* top section */
+.top-section-container {
+    width: 97%;
+    margin-top: 30px;
+    margin-left: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(22, 49, 114, 1);
+}
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 5px;
+}
+
+/* div grafik */
+.my-challenge {
+    width: 35%; 
+}
+
+.progress-container {
+    width: 63%; 
+    background: #eaeaea;
+    padding: 0px;
+    /* padding: 20px; */
+    border-radius: 10px;
+}
+
+.my-challenge h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.progress-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    margin-left: 16px;
+    margin-right: 16px;
+    /* padding: 10px 20px; */
+}
+
+.progress-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgba(8, 17, 40, 1);
+}
+
+.my-challenge {
+    background: rgba(236, 236, 237, 1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.due-date {
+    font-size: 12px;
+    color: #888;
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+}
+
+.title-container {
+    margin: 0;
+    align-items: center;
+}
+
+.title-container h2 {
+    font-size: 40px;
+}
+
+.tab-container {
+    display: flex;
+    gap: 10px;
+}
+
+.tab-button {
+    background-color: #a0a0c0;
+    color: #1a2a5f;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.tab-button:hover {
+    background: #1a2a5f;
+    color: white; 
+}
+
+.tab-button.active {
+    background-color: #1a2a5f;
+    color: white;
+}
+
+.chart-container {
+    padding: 15px;
+    /* padding: 15px; */
+    border-radius: 10px;
+}
+
+.chart-container img {
+    width: 100%;
+    /* display: block; */
+}
+
+/* search */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.search-container input {
+    width: 520px;
+    height: 40px;
+    font-size: 20px;
+    padding: 12px 50px 12px 20px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #B7BFD3;
+    color: #0B1E38;
+    outline: none;
+}
+
+.search-container .search-icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    width: 20px;
+    opacity: 0.6;
+    pointer-events: none;
+    margin-right: 400px;
+}
+
+.search-container input:focus {
+    background-color: #d6e0ee;
+}
+
+/* challenge list */
+.last-section {
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 50px;
+}

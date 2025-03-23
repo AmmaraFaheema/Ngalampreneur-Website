@@ -1,0 +1,460 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: 'Markazi Text' , sans-serif; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgba(246, 246, 246, 1);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 45px;
+}
+
+.logo img {
+    margin-top: 9px;
+    width: 119px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 0px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #2C3E50;
+    font-weight:normal;
+    font-size: 23px;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.signup-btn {
+    background-color: #1A3365;
+    color: white;
+    border: none;
+    padding:3px 45px;
+    margin-left: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 25px;
+    border: 2px solid #1A3365;
+}
+
+.signup-btn:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgba(22, 49, 114, 1);
+    border: 2px solid #1A3365;
+}
+
+.signup-btn:active {
+    background-color: #1A3365;
+    color: rgb(255, 255, 255);
+}
+
+.first-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    min-height: 100vh;
+}
+
+
+.first-content {
+    margin-top: -170px;
+    /* ubah ukuran dari tulisan ke atas */
+    margin-left: 120px;
+}
+
+.first-content h1 {
+    font-size: 60px;
+    color: #1A3365;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+.first-content h2 {
+    font-size:60px;
+    color: #1A3365;
+    font-weight: bold;
+    line-height: 0.5;
+}
+
+.first-content h3 {
+    font-size: 60px;
+    color: #1A3365;
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+
+.first-page p {
+    font-size: 30px;
+    color: #1A3365;
+    line-height: 0.9;
+}
+
+.cta-btn {
+    background-color: #1A3365;
+    color: white;
+    border: none;
+    padding:3px 45px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 25px;
+    margin-top: 33px;
+    border: 2px solid #1A3365;
+}
+
+.cta-btn:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgba(22, 49, 114, 1);
+    border: 2px solid #1A3365;
+}
+
+.cta-btn:active {
+    background-color: #1A3365;
+    color: rgb(255, 255, 255);
+}
+
+.ctb-btn {
+    background-color:rgba(214, 228, 240, 1);
+    color:#1A3365;
+    border: none;
+    padding:3px 45px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 25px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    border: 2px solid #1A3365;
+}
+
+.ctb-btn:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgba(22, 49, 114, 1);
+    border: 2px solid #1A3365;
+}
+
+.ctb-btn:active {
+    background-color: rgba(214, 228, 240, 1);
+    color:#1A3365;
+}
+
+
+.explore {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.explore img {
+    margin-top: 18px;
+    width: 60px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.explore p {
+    margin-top: 16px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.first-image img {
+    width: 100%;
+    max-width: 450px;
+    margin-right: 100px;
+    position: relative;
+    /* ubah ukuran dari image ke batas atas */
+    top: -60px;
+}
+
+/* Second Page */
+.second-page {
+    text-align: center;
+    padding: 50px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -20px;
+}
+
+.second-page h2 {
+    font-size: 40px;
+    font-weight: normal;
+    color: rgba(22, 49, 114, 1);
+    margin-bottom: 20px;
+}
+
+.second-page p {
+    font-size: 30px;
+    line-height: 1.2;
+    color: rgba(22, 49, 114, 1);
+}
+
+/* third page */
+
+.third-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    padding: 50px;
+    min-height: 100vh;
+    margin: 0;
+    background-color: rgba(214, 228, 240, 1);
+}
+
+.third-image {
+    width: 450px;
+    margin-left: 100px;
+    /* mengatur ukuran dari gambar ke samping */
+    margin-top: -105px;
+    /* mengatur posisi gambar dari tinggi */
+}
+
+.third-image img {
+    width: 100%;
+}
+
+.third-content {
+    width: 50%;
+    margin-left: 20px;
+    /* mengatur ukuran dari teks ke tepi kanan tapi dikasih jarak dari tepi kiri */
+    color: #1A3365;
+}
+
+.third-content h1 {
+    font-size: 60px;
+    font-weight: normal;
+    margin-bottom: -15px;
+}
+
+.third-content h2 {
+    font-size: 30px;
+    margin-top: 13px;
+    margin-bottom:-8px;
+}
+
+.third-content h3 {
+    font-size: 23px;
+    font-weight: normal;
+    line-height: 1;
+}
+
+.third-description {
+    width: 100%;
+}
+
+.third-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+
+.third-list p {
+    font-size: 24px;
+    font-weight: bold;
+    width: 40px; /* Menentukan ukuran angka */
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-color: #1A3365; /* Warna background angka */
+    color: white;
+    border-radius: 50%; /* Membuat angka berbentuk lingkaran */
+}
+
+.third-text {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column; /* Supaya h3 tetap di bawah h2 */
+    min-width: 200px; /* Biar gak terlalu sempit */
+    flex-wrap: wrap;
+}
+
+.third-btn {
+    margin-top: -15px;
+    /* mengatur tinggi button */
+}
+
+/* Fourth Page (Call to Action) */
+.fourth-page {
+    text-align: center;
+    padding: 30px;
+    background-color: #1A3365;
+    color: white;
+}
+
+.contact-btn {
+    background-color: white;
+    color: #1A3365;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.fourth-page {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.satu {
+    width: 100%;
+    height: 43vh;
+    background-color: rgba(246, 246, 246, 1);
+}
+
+.dua {
+    width: 70%;
+    height: 10vh;
+    background-color: rgba(22, 49, 114, 1);
+    position: absolute;
+    top: 40vh;
+    /* mengatur agar berada di tengah putih dan biru */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* memastikan biru tua menimpa warna lain dan terlihat */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    z-index: 2; 
+    /* memastikan biru tua berada di depan */
+    border-radius: 3vh;
+}
+
+.dua h1 {
+    font-size: 40px;
+    margin-left: 50px;
+}
+
+.footer-btn {
+    background-color: white;
+    color:#1A3365;
+    border: none;
+    padding:2px 20px;
+    margin-right: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 25px;
+    border: 2px solid #1A3365;
+}
+
+.footer-btn:hover {
+    background-color: rgba(214, 228, 240, 1);
+    color:#1A3365;
+    border: 2px solid #1A3365;
+}
+
+.footer-btn:active {
+    background-color: white;
+    color:#1A3365;
+}
+
+.tiga {
+    width: 100%;
+    height: 50vh;
+    background-color: rgba(214, 228, 240, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1; /* Pastikan hijau berada di belakang merah */
+    padding-top: 30px;
+    /* mengatur agar ke tengah bagian kotak ketiga */
+}
+
+.atasbiru {
+    width: 100%;
+    height: 50vh;
+    background-color: rgba(214, 228, 240, 1);
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.logo-footer {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.logo-footer img {
+    width: 160px;
+    margin-top: -10px;
+    margin-left: 150px;
+}
+
+.content-footer {
+    text-align: center;
+    max-width: 50%;
+    font-size: 0.9rem;
+    color: rgba(22, 49, 114, 1);
+}
+
+.content-footer h2 {
+    font-weight: normal;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sosmed p {
+    font-size: 20px;
+    line-height: 1;
+}
+
+/* BAGAIMANA AGAR BAGIAN PALING BAWAH BISA MELENGKUNG ATASNYA JADI TIDAK KPTAK SAJA */
+.footer {
+    width: 100%;
+    background-color: rgba(22, 49, 114, 1);
+    position: relative;
+    overflow: hidden;
+}

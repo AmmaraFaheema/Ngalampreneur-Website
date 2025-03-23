@@ -1,0 +1,210 @@
+/* reset dan konfigurasi dasar */
+* { /*selector untuk semua elemen di halaman*/
+    margin: 0; 
+    /*menghapus margin default agar tidak ada spasi tambahan*/
+    padding: 0; 
+    /*menghapus padding default agar tidak ada jarak tambahan*/
+    box-sizing: border-box;
+    /*memastikan w dan h mencakup padding dan border, tidak hanya kontennya*/
+    font-family: 'Markazi Text' , sans-serif; 
+    /*menetapkan font untuk seluruh halaman*/
+}
+
+/* elemen pembungkus utama yang menampung form-section dan image-section */
+.container {
+    display: flex; 
+    /*menggunakan flexbox agar elemen di dalamnya dapat diatur sejajar secara horizontal || mengatur form dan image section agar sejajar secar horizontal*/
+    height: 100vh; 
+    /*menjadikan container setinggi layar penuh || menyesuaikan tinggi selemen*/
+    overflow: hidden; 
+    /*mencehgah elemen didalamnya melampaui ukuran container*/
+    width: 100%;
+}
+
+/* bagian sebelah kiri yang berisi form pendaftaran */
+.form-section {
+    flex: 1;
+    width: 50%; 
+    /*lebar form-section sebesar 40% dari container utama*/
+    background: rgba(198, 213, 255, 1); 
+    /*memberi warna latar*/
+    padding: 30px; 
+    /*ruang didalam elemen agar konten tidak menempel ketepi*/
+    display: flex; 
+    /*flexbox untuk mengatur layout kontennya*/
+    flex-direction: column; 
+    /*menyusun elemen secara vertikal*/
+    justify-content: flex-end; 
+    /*mendorong konten agak kebawah*/
+    align-items: start; 
+    /*menjadikan elemen di tengah*/
+    padding-bottom: 50px;
+    /* menambah jarak bagian bawah form */
+    position: relative; 
+    /*memungkinkan elemen didalamnya seperti (logo) menggunakan "position-absolute"*/
+}
+
+/* gambar logo didalam form section */
+.logo {
+    width: 120px; 
+    /*menyesuaikan ukuran logo*/
+    position: absolute; 
+    /*menjadikan logo bebas diposisikan di dalam form-section*/
+    top: 13px; 
+    /*memberikan jarak 20 piksel dari bagian atas*/
+    left: 30px; 
+    /*memberikan jarak 20 piksel dari sisi kiri*/
+}
+
+/* judul formulir */
+h2 {
+    margin-bottom: 10px; 
+    /*menambah jarak antara h2 dan elemen setelahnya*/
+    font-size: 30px; 
+    /*menentukan ukuran font*/
+    align-self: center; 
+    /*menjadikan judul di tengah dari form*/
+    text-align: center;
+    /* memastikan text tidak bergeser */
+    font-weight: normal;
+    /* agar font nya tidak bold */
+}
+
+/* layar lebih kecil dari 768 piksel */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 24px;
+    }
+}
+
+/* layar lebih kecil 480 piksel */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 20px;
+    }
+}
+
+/* formulir */
+form {
+    width: 100%; 
+    /*font menyesuaikan dengan lebar form-section*/
+}
+
+/* label dalam form */
+label {
+    display: block; 
+    /*membuat label menjadi elemen blok agar berada diatas input*/
+    font-weight: normal; 
+    /*membuat teks tebal*/
+    margin: 15px 0px 0px; 
+    /*memberikan jarak atas, bawah, dan bawah label agar rapi*/
+    font-size:23px;
+    /* ukuran font didalam */
+}
+
+/* input dalam form */
+input {
+    width: 100%; 
+    /*input menyesuaikan lebar form*/
+    padding: 10px; 
+    /*menambahkan ruang di dalam input*/
+    margin-bottom: 5px; 
+    /*memberikan jarak antar input*/
+    border: 1px solid #000000; 
+    /*memberikan garis pinggir abu-abu*/
+    border-radius: 5px; 
+    /*membuat sudut input sedikit melengkung*/
+    font-size: 20px;
+    /* menyesuaikan ukuran font didalam kotak input */
+    font-weight: normal;
+    /* font normal tanpa bold */
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+    /* 
+    2px = x-offset || bayangan ke kanan 2px, kalo -2px geser ke kiri
+    2px = y-offset || bayangan ke bawah 2px, kalo -2px ke atas
+    4px = blur radius || semakin besar semakin blurr, 0px tanpa blur
+     */
+    
+}
+
+/* layar lebih kecil dari 768 piksel */
+@media (max-width: 768px) {
+    input {
+        font-size: 16px;
+        width: 100%;
+    }
+}
+
+/* tombol submit */
+button {
+    width: 30%; 
+    padding: 5px;
+    background-color: rgba(22, 49, 114, 1); 
+    /*warna latar tombol biru*/
+    color: white; 
+    /*teks tombol berwarna putih*/
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+    cursor: pointer; 
+    /*mengubah kursor menjadi tangan saat diarahkan ke tombol*/
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.697);
+}
+
+/* mengubah warna tombol saat ditekan */
+button:hover {
+    background-color: white; /*perbaiki nanti ya!!!*/
+    color: rgba(22, 49, 114, 1);
+    font-weight: bold;
+}
+
+/* layar lebih kecil dari 768 piksel */
+@media (max-width: 768px) {
+    button {
+        font-size: 18px;
+        width: 50%;
+    }
+}
+
+/* layar lebih kecil 480 piksel */
+@media (max-width: 480px) {
+    button {
+        font-size: 16px;
+        width: 60%;
+    }
+}
+
+/* bagian gambar */
+.image-section {
+    width: 60%; 
+    /*menentukan lebar bagian gambar sebesar 60% dari lebar layar*/
+    height: 100vh; 
+    /*tingginya mengikuti tinggi layar penuh*/
+    display: flex; 
+    /*memungkinkan elemen didalamnya diatur dengan flexbox*/
+    justify-content: center; 
+    /*memposisikan elemen di tengah secara hoorizontal*/
+    align-items: center; 
+    /*memposisikan elemen di tengah secara vertikal*/
+    position: relative; 
+    background: url('img/bg.png') no-repeat center center/cover; 
+    /*mengatur gambar sebagai latar belakang || repeat=mencegah gambar terulang, center center= memusatkan gambar, cover= menyesuaikan gambar agar menutupi seluruh area*/
+}
+
+/* kutipan di gambar */
+.quote {
+    font-size: 40px; 
+    /*ukuran teks kutipan*/
+    color: white; 
+    /*warna teks putih*/
+    text-align: center; 
+    /*memusatkan teks*/
+    position: absolute; 
+    /*memungkinkan teks ditempatkan secara bebas dalam .image-section*/
+    width: 80%; 
+    /*membatasi lebar teks agar tidak terlalu panjang*/
+    z-index: 1; 
+    /*memastikan teks berada di atas elemen lain*/
+}

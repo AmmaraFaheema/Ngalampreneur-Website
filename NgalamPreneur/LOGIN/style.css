@@ -1,0 +1,185 @@
+*{
+    font-family: 'Markazi Text', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #f0f3ff;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* logo */
+.logo-container {
+    position: absolute;
+    top: 30px;
+    left: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logo{
+    width: 120px;
+    height: auto;
+    position: absolute;
+    left: -20px;
+}
+
+.form-box-login{
+    width: 40%;
+    background-color: rgba(198, 213, 255, 1);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* header */
+.form-box-login h1{
+    font-size: 48px;
+    font-weight: 400;
+    text-align: center;
+    color: rgba(0, 0, 0, 1);
+    margin-top: 100px;
+}
+
+.form-box-login h3{
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+    color: rgba(0, 0, 0, 1);
+    margin-top: 6px;
+}
+
+.input-box-email, .input-box-pw{ 
+    width: 80%;
+    max-width: 600px;
+    border-radius: 12px;
+}
+
+.input-box-email p, .input-box-pw p{ 
+    font-size: 22px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+    margin-bottom: 5px;
+    margin-top: 20px;
+    margin-left: -3px;
+}
+
+.input-box-email input, .input-box-pw input {
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 1);
+    background-color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+    padding: 10px;
+}
+
+/* Sign in Button */
+.btn{
+    width: 180px;
+    height: 40px;
+    background-color: rgba(22, 49, 114, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 32px;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 12px;
+    border: none;
+    margin-top: 70px;
+}
+
+.btn:hover{
+    background-color: #4a5a98;
+}
+
+.register-text{
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.register-text a {
+    color: #337ab7;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.right-content{
+    flex: 3;
+    width: 60%;
+    background-image: url(img/login.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.quote{
+    width: 600px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1); 
+    font-size: 48px;
+    line-height: 100%; 
+    text-align: center;
+}
+
+/* Responsiveness */
+@media (max-width: 1440px) {
+    .form-box-login {
+        width: 40%;
+        padding: 30px;
+    }
+    .right-content {
+        width: 65%;
+    }
+    .form-box-login h1 {
+        font-size: 35px;
+        margin-top: 90px;
+    }
+    .form-box-login h3 {
+        font-size: 28px;
+    }
+    .logo {
+        margin-top: 3px;
+        margin-left: 1px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+    .form-box-login {
+        width: 100%;
+        padding: 20px;
+    }
+    .right-content {
+        width: 100%;
+        height: 300px;
+    }
+    .quote {
+        font-size: 36px;
+        width: 80%;
+    }
+}

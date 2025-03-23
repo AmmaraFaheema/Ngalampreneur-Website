@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Progress</title>
+    <link rel="stylesheet" href="grafik.css">
+</head>
+<body>
+
+    <div class="progress-container">
+        <h2>Challenge progress</h2>
+        <div class="tab-container">
+            <button class="tab-button" onclick="selectTab(this)">This week</button>
+            <button class="tab-button" onclick="selectTab(this)">This month</button>
+            <button class="tab-button active" onclick="selectTab(this)">This year</button>
+        </div>
+        <div class="chart-container">
+            <img src="graph.png" alt="Challenge Progress Graph">
+        </div>
+    </div>
+
+    <script>
+        function selectTab(element) {
+            document.querySelectorAll('.tab-button').forEach(button => {
+                button.classList.remove('active');
+            });
+            element.classList.add('active');
+        }
+    </script>
+
+</body>
+</html>

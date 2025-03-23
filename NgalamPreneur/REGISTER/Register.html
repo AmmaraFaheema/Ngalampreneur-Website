@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- bahasa utama halaman menggunakan bahasa inggris -->
+    <head>
+        <title>Register</title>
+        <link rel="stylesheet" href="style.css"> <!-- menghubungkan dokumen css eksternal -->
+        <!-- memakai font dari google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    </head>
+    
+    <body> <!-- bagian body -->
+        <div class="container"> <!-- container utama yang membungkus seluruh elemen dalam halaman -->
+            <div class="form-section"> <!-- bagian berisi formulir pendaftaran -->
+                <img src="img/logo.png" alt="logo" class="logo"> <!-- menampilkan logo dari folder -->
+                    <h2>Let's get started!</h2>
+                    <form action="../KATEGORI/Kategori.html"> <!-- formulir dengan id regiseterForm yang biasa digunakan untuk validasi atau pengiriman data -->
+
+                        <label for="fullname">Full name:</label> <!-- label untuk input -->
+                        <input type="text" id="fullname" placeholder="Enter your name here" required> <!-- kotak teks untuk memasukkan input -->
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="Enter your email here" required>
+
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" placeholder="Create your password here" required>
+
+                        <label for="confirm-password">Confirm Password:</label>
+                        <input type="password" id="confirm-password" placeholder="Confirm your password here" required>
+                        
+                            <button type="submit">Sign Up</button> <!-- tombol sign up -->
+                        
+                    </form>
+            </div>
+
+            <!-- bagian gambar -->
+            <div class="image-section"> <!-- bagian sebelah kanan halaman untuk menampilkan gambar latar -->
+                <p class="quote">The best preparation for tomorrow <br> is doing your best today</p> <!-- menampilkan kutipan motivasi -->
+            </div>
+        </div>
+    </body>
+</html>

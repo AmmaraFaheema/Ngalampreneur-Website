@@ -1,0 +1,331 @@
+/* FONT & BACKGROUND */
+body {
+    font-family: 'Markazi Text', sans-serif; 
+    background-color: rgba(255, 255, 255, 1);
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Markazi Text', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    max-width: 100%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    padding-top: 3px;
+}
+
+.logo{
+    width: 100px;
+    margin-left: 3px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav ul li{
+    margin: 0 10px;
+}
+
+nav ul li a{
+    font-size: 30px;
+    font-weight: 500;
+    color: #1E56A0;
+    padding: 5px;
+}
+
+nav ul li a:hover{
+    background-color: #0B1E38; /* Mengubah warna teks menjadi hitam saat dihover */
+    color: #F6F6F6;
+    border-radius: 10px;
+    transform: translateY(-5px);
+}
+
+.right-navbar .medal{ /* untuk icon */
+    width: 80px; 
+    height: auto;
+    margin-left: 15px; 
+}
+
+.right-navbar .settings{ /* untuk icon */
+    width: 30px; 
+    height: auto;
+    margin-left: 15px; 
+}
+
+.right-navbar .personal{ /* untuk icon */
+    width: 35px; 
+    height: auto;
+    margin-left: 15px;
+}
+
+/* KONTEN UTAMA */
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    padding-top: 20px;
+}
+
+/* KONTEN KIRI */
+.left-content {
+    width: 70%;
+    padding: 30px;
+}
+
+.community-description {
+    margin-bottom: 20px;
+}
+
+.community-profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-left: 30px;
+}
+
+.community-profile h1 {
+    color: rgba(22, 49, 114, 1);
+    font-size: 40px;
+    margin-bottom: -5px;
+}
+
+.community-profile p {
+    color: rgba(22, 49, 114, 1);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.community-info {
+    padding: 0;
+    margin: 0;
+}
+
+.community-total {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.properti-img {
+    height: 30px;
+}
+
+.post-content img{
+    width: 90px;
+}
+
+.post {
+    background: rgba(246, 246, 246, 1);
+    border: 5px solid rgba(236, 236, 237, 1);
+    display: flex;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+
+.user-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.post-content h3 {
+    margin: 0;
+    font-size: 26px;
+    color: rgba(22, 49, 114, 1);
+}
+
+.post-content p {
+    font-size: 24px;
+    color: rgba(22, 49, 114, 1);
+    margin-top: 1px;
+}
+
+.post-content img {
+    margin-top: 12px;
+    width: 130px;
+    height: auto;
+}
+
+/* KONTEN KANAN */
+.right-content {
+    width: 30%;
+    padding-right: 20px;
+}
+
+button {
+    font-family: 'Markazi Text', sans-serif; 
+    
+}
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    padding-top: 35px;
+    padding-bottom: 25px;
+    margin-right: 10px;
+}
+
+.buttons button{
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.button-in {
+    display: flex;
+    align-items: center;
+    padding: 10px 32px;
+    gap: 10px;
+}
+
+.button-in img {
+    width: 22px;
+    height: 100%;
+}
+
+.button-in p {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.button-join {
+    background-color: rgba(30, 86, 160, 1);
+    color: rgba(246, 246, 246, 1);
+}
+
+.button-create {
+    background-color: rgba(183, 191, 211, 1);
+    color: rgba(30, 86, 160, 1);
+}
+
+
+.community-card {
+    width: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 5px solid rgba(217, 217, 217, 1);
+}
+
+.card-header {
+    background-color: rgba(217, 217, 217, 1);
+    padding: 5px 15px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #1A3365;
+}
+
+.card-content {
+    background-color: rgba(236, 236, 237, 1);
+    padding: 2px 20px;
+    font-size: 24px;
+    color: #1A3365;
+}
+
+.card-content p {
+    margin: 5px 0;
+}
+
+.card-footer {
+    background-color: rgba(236, 236, 237, 1);
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #1A3365;
+}
+
+
+/* DAFTAR MEMBER */
+.members-list {
+    background: white; /* Kotak utama */
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+.members-list h2 {
+    margin-bottom: 10px;
+}
+
+.member-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 15px;
+    align-items: center;
+    background-color: rgba(236, 236, 237, 1);
+}
+
+.member {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.member img {
+    width: 50px;
+    height: 100%;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.member span {
+    font-size: 18px;
+    color: rgba(22, 49, 114, 1);
+    font-weight: normal;
+}
+
+.profil-kanan {
+    margin-top: -20px;
+}
+
+.see-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(30, 86, 160, 1); 
+    color: rgba(246, 246, 246, 1); 
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 38px;
+}
+
+/* RESPONSIF */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-content, .right-content {
+        width: 100%;
+    }
+}

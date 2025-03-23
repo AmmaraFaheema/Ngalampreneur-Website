@@ -1,0 +1,342 @@
+/* FONT & BACKGROUND */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Markazi Text', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    max-width: 100%;
+}
+
+
+body {
+    font-family: 'Markazi Text', sans-serif; 
+    margin: 0;
+    padding: 0;
+}
+
+/* mavbar */
+.navigasi {
+    margin-bottom: 30px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    padding-top: 3px;
+}
+
+.logo{
+    width: 100px;
+    margin-left: 3px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav ul li{
+    margin: 0 10px;
+}
+
+nav ul li a{
+    font-size: 30px;
+    font-weight: 500;
+    color: #1E56A0;
+    padding: 5px;
+}
+
+nav ul li a:hover{
+    background-color: #0B1E38; 
+    color: #F6F6F6;
+    border-radius: 10px;
+    transform: translateY(-5px);
+}
+
+.right-navbar .medal{
+    width: 80px; 
+    height: auto;
+    margin-left: 15px; 
+}
+
+.right-navbar .settings{
+    width: 30px; 
+    height: auto;
+    margin-left: 15px; 
+}
+
+.right-navbar .personal{ 
+    width: 35px; 
+    height: auto;
+    margin-left: 15px;
+}
+
+/* bannner */
+.banner {
+    position:relative;
+    width: 100%;
+    /* agar lurus dan tepat */
+    max-width: 1285px;
+    margin: 20px;
+    /* memberi jarak biar sama dengan workshop */
+    border-radius: 10px;
+    overflow: hidden;
+    /* agar gambar tidak melewati batas elemen*/
+}
+
+.banner h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* dipusatkan sempurna di tengah*/
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Markazi Text', serif;
+    white-space: nowrap;
+    /* tulisan tetap sebaris */
+}
+
+/* pembungkus */
+.section-container {
+    background: rgba(246, 246, 246, 1);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.section-title {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+.card-container {
+    display: grid;
+    /* menjadi kontainer grid */
+    grid-template-columns: repeat(4, 1fr);
+    /* grid memiliki 4 kolom */
+    /* 1 bagian ruang yang tersedia atau dibuat seimbang */
+    gap: 30px;
+    /* jarak antara 1 card dengan lainnya */
+    align-items: s;
+}
+
+/* cardlist general */
+.card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    /* isi konten disusun ke bawah */
+    height: 100%;
+    /* tinggi masing" card */
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+    background: #f8f9fa;
+    /* warna yang putih card nya */
+    flex-grow: 1;
+    /* membuat judul (workshop) tetap diatas dan view details tetap dibawah */
+    display: flex;
+    flex-direction: column;
+}
+
+.card-content p {
+    color: rgba(22, 49, 114, 1);
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+.card-content h3 {
+    font-size: 25px;
+    line-height: 0.8;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.badge {
+    background-color: rgba(22, 49, 114, 1);
+    color: white;
+    padding: 3px 3px;
+    font-size: 14px;
+    border-radius: 15px;
+    display: inline-block;
+    margin-top: -9px;
+    margin-bottom: 3px;
+    margin-right: 180px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1a237e;
+}
+
+.card-description {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.card-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: #1a237e;
+}
+
+/* tombol see more */
+.see-more-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.see-more {
+    padding: 4px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #285ca0;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.see-more:hover {
+    background-color: #11386e;
+}
+
+.see-more:active {
+    color: white;
+    background-color: #285ca0;
+}
+
+/* premium */
+.premium-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    margin-bottom: 50px;
+}
+
+.premium-container {
+    display: flex;
+    background: url(img/premium-bg.png) no-repeat center center/cover;
+    padding: 10px 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1280px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.premium-image img {
+    margin-top: 50px;
+    margin-right: 45px;
+    margin-left: 30px;
+    max-width: 250px;
+    height: auto;
+}
+
+.premium-content {
+    flex: 1;
+    padding-left: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* dibuat jadi kolom dan bisa disesuaikan dengan flex */
+    justify-content: space-between;
+    height: 100%;
+    position: relative;
+    
+}
+
+.premium-content h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.premium-features {
+    margin: 20px 0;
+}
+
+/* baris ceklis */
+.feature-row {
+    display: flex;
+    align-items: center;
+    /* ceklis berada di tengah kolom */
+    margin-bottom: 10px;
+}
+
+.checkmark {
+    font-size: 30px;
+    color: black;
+    margin-right: 10px;
+}
+
+.line {
+    flex: 1;
+    height: 2px;
+    background: black;
+    margin-right: 20px;
+}
+
+.full-width {
+    flex: 2;
+}
+
+/* tombol */
+.get-button {
+    padding: 4px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #285ca0;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    margin-bottom: 10px;
+    align-self: flex-end;
+    /* tombol mulai akhir jadi dari sebelah kanan */
+}
+
+.get-button:hover {
+    background-color: #11386e;
+}
+
+.get-button:active {
+    color: white;
+    background-color: #285ca0;
+}
